@@ -1,7 +1,7 @@
 ---
 - name: Install LLM Worker using Docker, setup NFS mount, and install NVIDIA Container Toolkit
   hosts: all
-  become: true
+  become: localhost
   vars:
     efs_ip: "172.32.1.100"
     share_path: "/share"
